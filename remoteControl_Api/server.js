@@ -46,27 +46,6 @@ handleDisconnect();
 app.use(cors());
 app.use(express.json());
 
-app.post('/api/listPost', (req, res) => {
-    const { song_title, song_artist, song_image } = req.body;
-
-    if (!song_title || !song_artist) {
-        res.status(400).json({ error: 'Invalid or missing payload' });
-        return;
-    }
-
-    const sqlQuery = 'INSERT INTO queueList (song_title, song_artist, song_image) VALUES (?, ?, ?)';
-    const values = [song_title, song_artist, song_image];
-
-    con.query(sqlQuery, values, function (error, results) {
-        if (error) {
-            console.error('Error executing the query:', error);
-            res.status(500).json({ error: 'Database error' });
-            return;
-        }
-        res.json(results);
-    });
-});
-
 app.post('/api/actionPost', (req, res) => {
     const { action } = req.body;
 
