@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "remoteControl_Extention",
+  "version": "1.0",
+  "description": "Remote control for youtube ",
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

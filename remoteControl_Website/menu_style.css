@@ -1,0 +1,99 @@
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  justify-content: space-evenly;
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  bottom: 10;
+  z-index: 100;
+}
+
+.search > svg,
+.play_pause > svg,
+.volume > svg,
+.reset > svg,
+.change_list > svg {
+  height: 25px;
+  fill: #ffffff;
+  margin: 15px;
+  stroke: #ffffff;
+}
+
+.search,
+.play_pause,
+.volume,
+.reset,
+.change_list {
+  background-color: #494949;
+  overflow: hidden;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+#volumeSlider {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  -webkit-appearance: none;
+  width: 70vw;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #494949;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+
+.searchWrapper {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  z-index: 99;
+  background-color: rgba(56, 56, 56, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.search_input {
+  background-color: #202020;
+  border: none;
+  border-radius: 100px;
+  width: 90vw;
+  height: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px;
+  z-index: 101;
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.playlists {
+  display: block;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  z-index: 99;
+  background-color: rgb(87, 87, 87);
+  color: #ffffff;
+  border-radius: 10%;
+}
+
+.playlists > li {
+  font-size: large;
+  list-style-type: none;
+  padding: 8px;
+  margin: 9px;
+  border-bottom: 1px solid #929292;
+}

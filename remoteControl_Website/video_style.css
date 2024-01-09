@@ -1,0 +1,56 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-family: "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  width: 99vw;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+}
+
+.videosList,
+.playlist {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 0px;
+  height: max-content;
+}
+
+.info {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.video-info {
+  width: 45vw;
+  color: rgb(179, 179, 179);
+  font-weight: 600;
+}
+
+.title {
+  font-size: calc(12px + 0.2vw);
+  font-weight: 700;
+  color: rgb(241, 241, 241);
+}
+
+.channel {
+  font-size: calc(12px + 0.2vw);
+}
+
+.duration {
+  font-size: calc(10px + 0.2vw);
+}
+
+.info > img {
+  margin: 0px 10px 0px 0px;
+  border-radius: 7%;
+  width: 178px;
+  height: 104px;
+  object-fit: contain;
+}
